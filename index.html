@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexCss.css">
+    <title>Student Register</title>
+</head>
+
+<body>
+        <div id="MajorCon">
+            <br>
+            <h1 style="text-align: center;color: white;">Student Register</h1>
+            <form id="crud-form">
+                <input type="text" id="id" placeholder="Eno. Number" class="border p-3 w-full">
+                <input type="text" id="name" placeholder="Enter Name" class="border p-3 w-full">
+                <input type="email" id="email" placeholder="Enter Email" class="border p-3 w-full">
+            </form>
+            <button type="submit" id="button">Add</button>
+            <div id="items-list"></div>
+        </div>
+
+  
+    <div id="editForm"
+        class="hidden  p-3 fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg">
+            <h2 style="color: white;">Edit Item</h2>
+            <form id="editItemForm">
+                <input type="text" id="editedId" name="editedId" value="ID" required><br>
+                <input type="text" id="editedName" name="editedName" value="Name"><br>
+                <input type="email" id="editedEmail" name="editedEmail" value="EMAIL" required><br>
+                <br> <button type="submit" class="save" onclick="savefn()">Save</button>
+                <button type="button" class="cancel" onclick="closeEditForm()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
