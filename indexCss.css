@@ -3,6 +3,7 @@ body {
     padding: 0%;
     background-image: url('3rd.jpg');
     background-size: cover;
+    background-repeat:no-repeat;
     box-sizing: border-box;
     min-height: 37rem;
 }
@@ -248,8 +249,8 @@ th {
             margin: 0;
             padding: 0;
             background-image: url('3rd.jpg');
-            background-size: cover;
-            background-repeat: no-repeat !important;
+           background-size: cover;
+            background-repeat: no-repeat;
             box-sizing: border-box;
             min-height: 70rem;
         }
