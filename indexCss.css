@@ -261,12 +261,11 @@ th {
             position: relative;
             background-color: rgba(0, 0, 0, 0.0);
             border-radius: 10px;
-            border:1px solid black;
         }
     
         #crud-form {
             grid-template-columns: 1fr; /* Set the grid to a single column */
-            padding: 1.5rem; /* You can adjust the padding if needed */
+            padding: 1.5rem; 
         }
     
         #crud-form input {
